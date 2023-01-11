@@ -1,6 +1,6 @@
 import { Chain } from './types'
 
-export const zkSyncTestnet: Chain = {
+export const zkSyncTestnet = {
   id: 280,
   name: 'zkSync Testnet',
   network: 'zksync-testnet',
@@ -18,4 +18,4 @@ export const zkSyncTestnet: Chain = {
     },
   },
   testnet: true,
-}
+} as const satisfies Chain
